@@ -1,0 +1,74 @@
+[
+  {
+    "label": "Ureia U 800, S 120, Cr U 100, S 2,0: FEUr 13,3% (pré-renal)",
+    "input": {
+      "uur": 800,
+      "pur": 120,
+      "ucr": 100,
+      "pcr": 2
+    },
+    "expected": {
+      "raw": {
+        "feur": 13.333
+      },
+      "level": "mid",
+      "verdict": "pré-renal",
+      "tol": 0.01
+    },
+    "originalInput": {
+      "uur": 800,
+      "pur": 120,
+      "ucr": 100,
+      "pcr": 2
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Ureia U 700, S 100, Cr U 80, S 4,0: FEUr exatamente 35% (limite pré-renal)",
+    "input": {
+      "uur": 700,
+      "pur": 100,
+      "ucr": 80,
+      "pcr": 4
+    },
+    "expected": {
+      "raw": {
+        "feur": 35
+      },
+      "main": "35,0",
+      "level": "mid",
+      "tol": 0.01
+    },
+    "originalInput": {
+      "uur": 700,
+      "pur": 100,
+      "ucr": 80,
+      "pcr": 4
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Ureia U 500, S 100, Cr U 30, S 3,0: FEUr 50% (NTA)",
+    "input": {
+      "uur": 500,
+      "pur": 100,
+      "ucr": 30,
+      "pcr": 3
+    },
+    "expected": {
+      "raw": {
+        "feur": 50
+      },
+      "level": "high",
+      "verdict": "necrose tubular",
+      "tol": 0.01
+    },
+    "originalInput": {
+      "uur": 500,
+      "pur": 100,
+      "ucr": 30,
+      "pcr": 3
+    },
+    "expandedZeroOptions": []
+  }
+]

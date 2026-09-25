@@ -1,0 +1,174 @@
+{
+  "tool": {
+    "id": "fracao-de-excrecao-de-ureia",
+    "title": "Fração de excreção de ureia (FEUr)",
+    "short": "LRA pré-renal ou NTA em quem usou diurético",
+    "desc": "Calcule a fração de excreção de ureia (FEUr): diferencia azotemia pré-renal de necrose tubular aguda, inclusive em pacientes que usaram diurético.",
+    "lead": "Mede a porcentagem da ureia filtrada que é excretada. Como a reabsorção de ureia depende pouco do transporte de sódio, o índice continua útil em quem recebeu diurético.",
+    "spec": [
+      "nefrologia",
+      "clinica-medica",
+      "medicina-intensiva"
+    ],
+    "fields": [
+      [
+        "uur",
+        "Ureia urinária",
+        "num",
+        {
+          "min": 10,
+          "max": 5000,
+          "unit": "mg/dL",
+          "ph": "600"
+        }
+      ],
+      [
+        "pur",
+        "Ureia sérica",
+        "num",
+        {
+          "min": 10,
+          "max": 600,
+          "unit": "mg/dL",
+          "ph": "120"
+        }
+      ],
+      [
+        "ucr",
+        "Creatinina urinária",
+        "num",
+        {
+          "min": 1,
+          "max": 500,
+          "step": 0.1,
+          "unit": "mg/dL",
+          "ph": "80"
+        }
+      ],
+      [
+        "pcr",
+        "Creatinina sérica",
+        "num",
+        {
+          "min": 0.2,
+          "max": 20,
+          "step": 0.01,
+          "unit": "mg/dL",
+          "ph": "2,5"
+        }
+      ]
+    ],
+    "formula": "<p>FEUr (%) = (ureia urinária × creatinina sérica) ÷ (ureia sérica × creatinina urinária) × 100.</p><p>Ureia ou BUN dão o mesmo resultado, desde que a mesma grandeza seja usada no sangue e na urina.</p>",
+    "table": [
+      [
+        "FEUr",
+        "Interpretação"
+      ],
+      [
+        "≤ 35%",
+        "Sugere azotemia pré-renal"
+      ],
+      [
+        "&gt; 35%",
+        "Sugere necrose tubular aguda (média de 58,6% no estudo original)"
+      ]
+    ],
+    "tips": [
+      "Principal indicação: paciente com lesão renal aguda que já recebeu <strong>diurético</strong>, situação em que a FENa perde especificidade.",
+      "No estudo de Carvounis, 89% dos pacientes pré-renais com diurético tinham FEUr &lt; 35%, contra apenas 48% com FENa &lt; 1%.",
+      "Idosos, sepse e diurese osmótica (manitol, hiperglicemia) podem alterar a FEUr: use o índice junto com a clínica e o sedimento.",
+      "Colha sangue e urina ao mesmo tempo; valores de ureia em mg/dL e de creatinina em mg/dL, sem converter unidades."
+    ],
+    "sources": [
+      [
+        "Carvounis CP, Nisar S, Guro-Razuman S. Significance of the fractional excretion of urea in the differential diagnosis of acute renal failure. Kidney Int, 2002.",
+        "https://doi.org/10.1046/j.1523-1755.2002.00683.x"
+      ]
+    ],
+    "cases": [
+      [
+        "Ureia U 800, S 120, Cr U 100, S 2,0: FEUr 13,3% (pré-renal)",
+        {
+          "uur": 800,
+          "pur": 120,
+          "ucr": 100,
+          "pcr": 2
+        },
+        {
+          "raw": {
+            "feur": 13.333
+          },
+          "level": "mid",
+          "verdict": "pré-renal",
+          "tol": 0.01
+        }
+      ],
+      [
+        "Ureia U 700, S 100, Cr U 80, S 4,0: FEUr exatamente 35% (limite pré-renal)",
+        {
+          "uur": 700,
+          "pur": 100,
+          "ucr": 80,
+          "pcr": 4
+        },
+        {
+          "raw": {
+            "feur": 35
+          },
+          "main": "35,0",
+          "level": "mid",
+          "tol": 0.01
+        }
+      ],
+      [
+        "Ureia U 500, S 100, Cr U 30, S 3,0: FEUr 50% (NTA)",
+        {
+          "uur": 500,
+          "pur": 100,
+          "ucr": 30,
+          "pcr": 3
+        },
+        {
+          "raw": {
+            "feur": 50
+          },
+          "level": "high",
+          "verdict": "necrose tubular",
+          "tol": 0.01
+        }
+      ]
+    ],
+    "batch": "renal-digestivo",
+    "kind": "Calculadora",
+    "config": null,
+    "areaId": "renal-digestivo",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/renal-digestivo.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 3,
+      "passed": 3,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/renal-digestivo.php",
+    "sha256": "95087d729438637d36e1a49af04d8de0fe1d9f7876443084443906a9281ef107",
+    "bytes": 109421
+  },
+  "clinicalValidation": "not-performed"
+}
