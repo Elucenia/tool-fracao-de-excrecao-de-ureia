@@ -1,9 +1,11 @@
-/* ELUCENIA standalone integration. Source package metadata and rights: README.md. */
+/* tool-fracao-de-excrecao-de-ureia · Elucenia · https://github.com/Elucenia/tool-fracao-de-excrecao-de-ureia
+   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+   Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"fracao-de-excrecao-de-ureia","title":"Fração de excreção de ureia (FEUr)","fields":[["uur","Ureia urinária","num",{"min":10,"max":5000,"unit":"mg/dL","ph":"600"}],["pur","Ureia sérica","num",{"min":10,"max":600,"unit":"mg/dL","ph":"120"}],["ucr","Creatinina urinária","num",{"min":1,"max":500,"step":0.1,"unit":"mg/dL","ph":"80"}],["pcr","Creatinina sérica","num",{"min":0.2,"max":20,"step":0.01,"unit":"mg/dL","ph":"2,5"}]],"config":null,"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
