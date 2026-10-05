@@ -1,0 +1,280 @@
+{
+  "id": "fracao-de-excrecao-de-ureia",
+  "at": "2026-10-05T17:29:35.550Z",
+  "adapter": {
+    "file": "apps/website/private/tool-code/fracao-de-excrecao-de-ureia/calculator.js",
+    "bytes": 4948,
+    "sha256": "0cdc2ef77d94c41e9436063b2547c29599fbca524b20f5eb82a74cf87cc06f1b"
+  },
+  "cases": [
+    {
+      "name": "Ureia U 800, S 120, Cr U 100, S 2,0: FEUr 13,3% (pré-renal)",
+      "input": {
+        "uur": 800,
+        "pur": 120,
+        "ucr": 100,
+        "pcr": 2
+      },
+      "obtained": {
+        "id": "fracao-de-excrecao-de-ureia",
+        "main": [
+          "13,3",
+          "%"
+        ],
+        "label": "Fração de excreção de ureia",
+        "raw": {
+          "feur": 13.333333
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.feur",
+          "expected": 13.333,
+          "obtained": 13.333333,
+          "tolerance": 0.01,
+          "difference": 0.0003329999999994726,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.feur",
+          "expected": 13.333333,
+          "obtained": 13.333333,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "13,3",
+          "obtained": "13,3",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "%",
+          "obtained": "%",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        },
+        {
+          "key": "verdict",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "Ureia U 700, S 100, Cr U 80, S 4,0: FEUr exatamente 35% (limite pré-renal)",
+      "input": {
+        "uur": 700,
+        "pur": 100,
+        "ucr": 80,
+        "pcr": 4
+      },
+      "obtained": {
+        "id": "fracao-de-excrecao-de-ureia",
+        "main": [
+          "35,0",
+          "%"
+        ],
+        "label": "Fração de excreção de ureia",
+        "raw": {
+          "feur": 35
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.main",
+          "expected": "35,0",
+          "obtained": "35,0",
+          "scope": "Recorded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.feur",
+          "expected": 35,
+          "obtained": 35,
+          "tolerance": 0.01,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.feur",
+          "expected": 35,
+          "obtained": 35,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "35,0",
+          "obtained": "35,0",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "%",
+          "obtained": "%",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "Ureia U 500, S 100, Cr U 30, S 3,0: FEUr 50% (NTA)",
+      "input": {
+        "uur": 500,
+        "pur": 100,
+        "ucr": 30,
+        "pcr": 3
+      },
+      "obtained": {
+        "id": "fracao-de-excrecao-de-ureia",
+        "main": [
+          "50,0",
+          "%"
+        ],
+        "label": "Fração de excreção de ureia",
+        "raw": {
+          "feur": 50
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.feur",
+          "expected": 50,
+          "obtained": 50,
+          "tolerance": 0.01,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.feur",
+          "expected": 50,
+          "obtained": 50,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "50,0",
+          "obtained": "50,0",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "%",
+          "obtained": "%",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        },
+        {
+          "key": "verdict",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    }
+  ],
+  "refusals": {
+    "passed": 44,
+    "failed": 0,
+    "failures": []
+  },
+  "sourceNodeBrowserVmParity": true,
+  "actualBrowserDomVerified": false,
+  "newIndependentOracle": false,
+  "currentActualR6HttpEvidence": "pending",
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false
+}

@@ -1,0 +1,88 @@
+{
+  "id": "fracao-de-excrecao-de-ureia",
+  "repository": "Elucenia/tool-fracao-de-excrecao-de-ureia",
+  "branch": "main",
+  "commit": "d8f95466aaf549e5f296669ed3e59f6f453454a6",
+  "archiveSha256": "a778373b36cb942892046efcd673408a2142ac1ce180a6614da161cce01dbd46",
+  "protectedFiles": [
+    {
+      "path": ".gitattributes",
+      "type": "blob",
+      "mode": "100644",
+      "size": 19,
+      "sha": "6313b56c57848efce05faa7aa7e901ccfc2886ea",
+      "sha256": "d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "type": "blob",
+      "mode": "100644",
+      "size": 279,
+      "sha": "7d3f2f34aa2e948d30695d82d64361467d9e6485",
+      "sha256": "bdbefea1fc6b1d8847725c698f62920917bc8d6504bfe8ed622ed2d5aaf7f160"
+    },
+    {
+      "path": ".gitignore",
+      "type": "blob",
+      "mode": "100644",
+      "size": 42,
+      "sha": "e375bd25cf1a574310ac4c7af0299884556e81e1",
+      "sha256": "763fb702ccbb9bfd8549ca3d0844c731b22aca4e665a2b61d1bb764b64f734d8"
+    },
+    {
+      "path": "AUTHORSHIP.md",
+      "type": "blob",
+      "mode": "100644",
+      "size": 3357,
+      "sha": "54394a8e31b5bdf1c89c25066ef99fc1663e9b7c",
+      "sha256": "87be5b1abf04d977d04b301faa9a88e0801303251e7a9b7b19aa3c0b801d96a6"
+    },
+    {
+      "path": "CITATION.cff",
+      "type": "blob",
+      "mode": "100644",
+      "size": 962,
+      "sha": "41f32ee3c1aa2181d2a00ed6f196668b70d1b8c5",
+      "sha256": "d5948508d15cacedfce2b90836d6f66fd6fe8205470c30e02b0298f793d539da"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "type": "blob",
+      "mode": "100644",
+      "size": 1478,
+      "sha": "8a31f528228ebee0ba73ce9c3c9862930a951840",
+      "sha256": "6d9219c29a498a555731f4773eff2496426751390d30f70354dbc36eddd53c93"
+    },
+    {
+      "path": "LICENSE",
+      "type": "blob",
+      "mode": "100644",
+      "size": 11358,
+      "sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "NOTICE",
+      "type": "blob",
+      "mode": "100644",
+      "size": 1672,
+      "sha": "aff8a115b3c7a9f30aaea4a63fa205619dd8f096",
+      "sha256": "2639d0d3a3b329c038fc101f445f7c6bd12b616d9291b6e6b246aad1f6508da2"
+    },
+    {
+      "path": "SECURITY.md",
+      "type": "blob",
+      "mode": "100644",
+      "size": 894,
+      "sha": "44eafb996937916cbe53e24fa9c5208fe03d5767",
+      "sha256": "3c20d46e436116be0c673f0260b24bbc2193fafbd15fb4659bf0e545b452487e"
+    }
+  ],
+  "receipt": {
+    "file": "reports/review-20261005-completion/native190-protected-remote-baseline-r1.json",
+    "bytes": 6066154,
+    "sha256": "ec8bac70e5a6eed7fb742c319c4e68344eea5713350fa16b9d9bf48e014a9a88"
+  },
+  "remoteCodeExecuted": false,
+  "freshBranchReadRequiredBeforePublication": true
+}

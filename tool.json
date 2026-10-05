@@ -5,6 +5,7 @@
     "short": "LRA pré-renal ou NTA em quem usou diurético",
     "desc": "Calcule a fração de excreção de ureia (FEUr): diferencia azotemia pré-renal de necrose tubular aguda, inclusive em pacientes que usaram diurético.",
     "lead": "Mede a porcentagem da ureia filtrada que é excretada. Como a reabsorção de ureia depende pouco do transporte de sódio, o índice continua útil em quem recebeu diurético.",
+    "kind": "Calculadora",
     "spec": [
       "nefrologia",
       "clinica-medica",
@@ -59,26 +60,6 @@
       ]
     ],
     "formula": "<p>FEUr (%) = (ureia urinária × creatinina sérica) ÷ (ureia sérica × creatinina urinária) × 100.</p><p>Ureia ou BUN dão o mesmo resultado, desde que a mesma grandeza seja usada no sangue e na urina.</p>",
-    "table": [
-      [
-        "FEUr",
-        "Interpretação"
-      ],
-      [
-        "≤ 35%",
-        "Sugere azotemia pré-renal"
-      ],
-      [
-        "&gt; 35%",
-        "Sugere necrose tubular aguda (média de 58,6% no estudo original)"
-      ]
-    ],
-    "tips": [
-      "Principal indicação: paciente com lesão renal aguda que já recebeu <strong>diurético</strong>, situação em que a FENa perde especificidade.",
-      "No estudo de Carvounis, 89% dos pacientes pré-renais com diurético tinham FEUr &lt; 35%, contra apenas 48% com FENa &lt; 1%.",
-      "Idosos, sepse e diurese osmótica (manitol, hiperglicemia) podem alterar a FEUr: use o índice junto com a clínica e o sedimento.",
-      "Colha sangue e urina ao mesmo tempo; valores de ureia em mg/dL e de creatinina em mg/dL, sem converter unidades."
-    ],
     "sources": [
       [
         "Carvounis CP, Nisar S, Guro-Razuman S. Significance of the fractional excretion of urea in the differential diagnosis of acute renal failure. Kidney Int, 2002.",
@@ -138,9 +119,6 @@
         }
       ]
     ],
-    "kind": "Calculadora",
-    "config": null,
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -149,17 +127,149 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T12:26:57.342Z",
+      "total": 81,
+      "passed": 81,
+      "evidencePath": "reports/review-20261003/fena-precision-amendment-candidate-final22.json",
+      "evidenceSha256": "b417ec793165e6ccdab47424b1ca011e559fad6cd1a923f35b0bf2db5aafab03",
+      "scope": "Dimensionless clearance fraction arithmetic with matching blood/urine solute units. This corroborating study does not replace Carvounis2002, validate renal etiologic labels or establish population applicability.",
+      "source": {
+        "edition": "Watanabe et al. ESC Heart Failure 2024, DOI10.1002/ehf2.14755",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/38522427/",
+        "locator": "Abstract: Methods and results, FEUN formula",
+        "access": "Primary author abstract formula read directly in PubMed on 2026-10-04. Full article not required or claimed.",
+        "scope": "Dimensionless clearance fraction arithmetic with matching blood/urine solute units. This corroborating study does not replace Carvounis2002, validate renal etiologic labels or establish population applicability."
+      },
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "FEUrea/Carvounis 2002:100×Uureia×PCr/(Pureia×UCr); grandezasureia/BUNconsistentes",
+    "implementationVersion": "fracao-de-excrecao-de-ureia@native-2026-10-03+0cdc2ef77d94",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/12427149/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "FEUr (%) = (ureia urinária × creatinina sérica) ÷ (ureia sérica × creatinina urinária) × 100. Ureia ou BUN dão o mesmo resultado, desde que a mesma grandeza seja usada no sangue e na urina.",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "uur",
+            "label": "Ureia urinária",
+            "type": "num",
+            "min": 10,
+            "max": 5000,
+            "unit": "mg/dL",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "pur",
+            "label": "Ureia sérica",
+            "type": "num",
+            "min": 10,
+            "max": 600,
+            "unit": "mg/dL",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "ucr",
+            "label": "Creatinina urinária",
+            "type": "num",
+            "min": 1,
+            "max": 500,
+            "unit": "mg/dL",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "pcr",
+            "label": "Creatinina sérica",
+            "type": "num",
+            "min": 0.2,
+            "max": 20,
+            "unit": "mg/dL",
+            "optional": false,
+            "options": null
+          }
+        ],
+        "hash": "eba6703cd8cb17eb907b2a4412646953006420617cf4165e3f9f6d3cf6682c6f"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Carvounis CP, Nisar S, Guro-Razuman S. Significance of the fractional excretion of urea in the differential diagnosis of acute renal failure. Kidney Int, 2002.",
+          "url": "https://doi.org/10.1046/j.1523-1755.2002.00683.x",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Significance of the fractional excretion of urea in the differential diagnosis of acute renal failure.",
+            "year": "2002",
+            "firstPublicationDate": "2002-12-01",
+            "doi": "10.1046/j.1523-1755.2002.00683.x",
+            "pmid": "12427149",
+            "journal": "Kidney international",
+            "authors": "Carvounis CP, Nisar S, Guro-Razuman S."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/12427149/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "26025f39fd78cba6b032ef7637214ca01b2a1f9ca0b0b3822d6efe92070eb50d",
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T12:26:57.342Z",
+        "total": 81,
+        "passed": 81,
+        "evidencePath": "reports/review-20261003/fena-precision-amendment-candidate-final22.json",
+        "scope": "Dimensionless clearance fraction arithmetic with matching blood/urine solute units. This corroborating study does not replace Carvounis2002, validate renal etiologic labels or establish population applicability.",
+        "caseEvidence": {
+          "schema": "independentArithmeticTest.cases",
+          "recordedEvidenceSha256": "9cc935f9289dd3fb395138accce124694debcbf1d7da61a77c0dc6c2f31f1cce"
+        }
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "0cdc2ef77d94c41e9436063b2547c29599fbca524b20f5eb82a74cf87cc06f1b"
+    },
+    "limits": "O estudo de 2002 avaliou episódios de insuficiência renal aguda, incluindo causas pré-renais com e sem diuréticos e necrose tubular. A FE de ureia foi menos influenciada pelos diuréticos nessa comparação; isso não a torna independente de todas as interferências nem confirma etiologia pelo corte isolado.",
+    "sourceLimitEvidence": {
+      "checkedAt": "2026-10-04T02:52:02.978Z",
+      "scope": "Targeted source reading and authorial documentation, not full method or clinical approval.",
+      "sourceReviewFile": "remaining-native-population-limits-review.json",
+      "sourceReviewSha256": "ba61a9b120a338c518c34ba9f324558b12580e7f5371ea81304b030b45ea44a5",
+      "readingOutcome": "review-outcome-recorded",
+      "unresolved": [
+        "Menos influenciada não significa imune a todas as interferências; resumo não prova desempenho em toda doença ou tratamento."
+      ],
+      "fullMethodConformanceReviewed": false,
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/fracao-de-excrecao-de-ureia/calculator.js",
+    "bytes": 4948,
+    "sha256": "0cdc2ef77d94c41e9436063b2547c29599fbca524b20f5eb82a74cf87cc06f1b"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "82574c90e66385224893874f1c024dae0305e457a06ae835151d8b30bc0fb1d4",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 81,
+      "sha256": "15eedadb4173654891045c1bfe1c1451761a18b130a136584ada45774c6d50f0",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }

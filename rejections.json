@@ -1,0 +1,594 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field uur",
+    "input": {
+      "pur": 120,
+      "ucr": 100,
+      "pcr": 2
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "uur"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field uur",
+    "input": {
+      "uur": "",
+      "pur": 120,
+      "ucr": 100,
+      "pcr": 2
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "uur"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" uur",
+    "input": {
+      "uur": "NaN",
+      "pur": 120,
+      "ucr": 100,
+      "pcr": 2
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "uur"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" uur",
+    "input": {
+      "uur": "Infinity",
+      "pur": 120,
+      "ucr": 100,
+      "pcr": 2
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "uur"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" uur",
+    "input": {
+      "uur": "1e309",
+      "pur": 120,
+      "ucr": 100,
+      "pcr": 2
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "uur"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" uur",
+    "input": {
+      "uur": "invalid",
+      "pur": 120,
+      "ucr": 100,
+      "pcr": 2
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "uur"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} uur",
+    "input": {
+      "uur": {},
+      "pur": 120,
+      "ucr": 100,
+      "pcr": 2
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "uur"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true uur",
+    "input": {
+      "uur": true,
+      "pur": 120,
+      "ucr": 100,
+      "pcr": 2
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "uur"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum uur",
+    "input": {
+      "uur": 9,
+      "pur": 120,
+      "ucr": 100,
+      "pcr": 2
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "uur"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum uur",
+    "input": {
+      "uur": 5500,
+      "pur": 120,
+      "ucr": 100,
+      "pcr": 2
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "uur"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field pur",
+    "input": {
+      "uur": 800,
+      "ucr": 100,
+      "pcr": 2
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "pur"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field pur",
+    "input": {
+      "uur": 800,
+      "pur": "",
+      "ucr": 100,
+      "pcr": 2
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "pur"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" pur",
+    "input": {
+      "uur": 800,
+      "pur": "NaN",
+      "ucr": 100,
+      "pcr": 2
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "pur"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" pur",
+    "input": {
+      "uur": 800,
+      "pur": "Infinity",
+      "ucr": 100,
+      "pcr": 2
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "pur"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" pur",
+    "input": {
+      "uur": 800,
+      "pur": "1e309",
+      "ucr": 100,
+      "pcr": 2
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "pur"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" pur",
+    "input": {
+      "uur": 800,
+      "pur": "invalid",
+      "ucr": 100,
+      "pcr": 2
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "pur"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} pur",
+    "input": {
+      "uur": 800,
+      "pur": {},
+      "ucr": 100,
+      "pcr": 2
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "pur"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true pur",
+    "input": {
+      "uur": 800,
+      "pur": true,
+      "ucr": 100,
+      "pcr": 2
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "pur"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum pur",
+    "input": {
+      "uur": 800,
+      "pur": 9,
+      "ucr": 100,
+      "pcr": 2
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "pur"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum pur",
+    "input": {
+      "uur": 800,
+      "pur": 660,
+      "ucr": 100,
+      "pcr": 2
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "pur"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field ucr",
+    "input": {
+      "uur": 800,
+      "pur": 120,
+      "pcr": 2
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "ucr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field ucr",
+    "input": {
+      "uur": 800,
+      "pur": 120,
+      "ucr": "",
+      "pcr": 2
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "ucr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" ucr",
+    "input": {
+      "uur": 800,
+      "pur": 120,
+      "ucr": "NaN",
+      "pcr": 2
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ucr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" ucr",
+    "input": {
+      "uur": 800,
+      "pur": 120,
+      "ucr": "Infinity",
+      "pcr": 2
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ucr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" ucr",
+    "input": {
+      "uur": 800,
+      "pur": 120,
+      "ucr": "1e309",
+      "pcr": 2
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ucr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" ucr",
+    "input": {
+      "uur": 800,
+      "pur": 120,
+      "ucr": "invalid",
+      "pcr": 2
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ucr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} ucr",
+    "input": {
+      "uur": 800,
+      "pur": 120,
+      "ucr": {},
+      "pcr": 2
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ucr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true ucr",
+    "input": {
+      "uur": 800,
+      "pur": 120,
+      "ucr": true,
+      "pcr": 2
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ucr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum ucr",
+    "input": {
+      "uur": 800,
+      "pur": 120,
+      "ucr": 0,
+      "pcr": 2
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "ucr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum ucr",
+    "input": {
+      "uur": 800,
+      "pur": 120,
+      "ucr": 550,
+      "pcr": 2
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "ucr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field pcr",
+    "input": {
+      "uur": 800,
+      "pur": 120,
+      "ucr": 100
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "pcr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field pcr",
+    "input": {
+      "uur": 800,
+      "pur": 120,
+      "ucr": 100,
+      "pcr": ""
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "pcr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" pcr",
+    "input": {
+      "uur": 800,
+      "pur": 120,
+      "ucr": 100,
+      "pcr": "NaN"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "pcr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" pcr",
+    "input": {
+      "uur": 800,
+      "pur": 120,
+      "ucr": 100,
+      "pcr": "Infinity"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "pcr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" pcr",
+    "input": {
+      "uur": 800,
+      "pur": 120,
+      "ucr": 100,
+      "pcr": "1e309"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "pcr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" pcr",
+    "input": {
+      "uur": 800,
+      "pur": 120,
+      "ucr": 100,
+      "pcr": "invalid"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "pcr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} pcr",
+    "input": {
+      "uur": 800,
+      "pur": 120,
+      "ucr": 100,
+      "pcr": {}
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "pcr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true pcr",
+    "input": {
+      "uur": 800,
+      "pur": 120,
+      "ucr": 100,
+      "pcr": true
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "pcr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum pcr",
+    "input": {
+      "uur": 800,
+      "pur": 120,
+      "ucr": 100,
+      "pcr": -0.8
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "pcr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum pcr",
+    "input": {
+      "uur": 800,
+      "pur": 120,
+      "ucr": 100,
+      "pcr": 22
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "pcr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]

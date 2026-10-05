@@ -1,6 +1,15 @@
 [
   {
-    "label": "Ureia U 800, S 120, Cr U 100, S 2,0: FEUr 13,3% (pré-renal)",
+    "id": "fracao-de-excrecao-de-ureia",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "Ureia U 800, S 120, Cr U 100, S 2,0: FEUr 13,3% (pré-renal)",
+    "originalInput": {
+      "uur": 800,
+      "pur": 120,
+      "ucr": 100,
+      "pcr": 2
+    },
     "input": {
       "uur": 800,
       "pur": 120,
@@ -15,16 +24,36 @@
       "verdict": "pré-renal",
       "tol": 0.01
     },
-    "originalInput": {
-      "uur": 800,
-      "pur": 120,
-      "ucr": 100,
-      "pcr": 2
+    "recordedResult": {
+      "main": [
+        "13,3",
+        "%"
+      ],
+      "label": "Fração de excreção de ureia",
+      "raw": {
+        "feur": 13.333333
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Ureia U 700, S 100, Cr U 80, S 4,0: FEUr exatamente 35% (limite pré-renal)",
+    "id": "fracao-de-excrecao-de-ureia",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "Ureia U 700, S 100, Cr U 80, S 4,0: FEUr exatamente 35% (limite pré-renal)",
+    "originalInput": {
+      "uur": 700,
+      "pur": 100,
+      "ucr": 80,
+      "pcr": 4
+    },
     "input": {
       "uur": 700,
       "pur": 100,
@@ -39,16 +68,36 @@
       "level": "mid",
       "tol": 0.01
     },
-    "originalInput": {
-      "uur": 700,
-      "pur": 100,
-      "ucr": 80,
-      "pcr": 4
+    "recordedResult": {
+      "main": [
+        "35,0",
+        "%"
+      ],
+      "label": "Fração de excreção de ureia",
+      "raw": {
+        "feur": 35
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Ureia U 500, S 100, Cr U 30, S 3,0: FEUr 50% (NTA)",
+    "id": "fracao-de-excrecao-de-ureia",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "Ureia U 500, S 100, Cr U 30, S 3,0: FEUr 50% (NTA)",
+    "originalInput": {
+      "uur": 500,
+      "pur": 100,
+      "ucr": 30,
+      "pcr": 3
+    },
     "input": {
       "uur": 500,
       "pur": 100,
@@ -63,12 +112,23 @@
       "verdict": "necrose tubular",
       "tol": 0.01
     },
-    "originalInput": {
-      "uur": 500,
-      "pur": 100,
-      "ucr": 30,
-      "pcr": 3
+    "recordedResult": {
+      "main": [
+        "50,0",
+        "%"
+      ],
+      "label": "Fração de excreção de ureia",
+      "raw": {
+        "feur": 50
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]
