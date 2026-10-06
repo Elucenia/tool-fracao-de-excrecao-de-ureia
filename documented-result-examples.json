@@ -1,0 +1,807 @@
+{
+  "id": "fracao-de-excrecao-de-ureia",
+  "implementationVersion": "fracao-de-excrecao-de-ureia@native-2026-10-05+6c20c85fef5d",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Ureia U 800, S 120, Cr U 100, S 2,0: FEUr 13,3% (pré-renal)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Referência (Carvounis 2002)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "pré-renal: média de 25 a 28% · NTA: média de 58,6%",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "FEUr ≤ 35%: sugere azotemia pré-renal",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Ureia U 700, S 100, Cr U 80, S 4,0: FEUr exatamente 35% (limite pré-renal)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Referência (Carvounis 2002)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "pré-renal: média de 25 a 28% · NTA: média de 58,6%",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "FEUr ≤ 35%: sugere azotemia pré-renal",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Ureia U 500, S 100, Cr U 30, S 3,0: FEUr 50% (NTA)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Referência (Carvounis 2002)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "pré-renal: média de 25 a 28% · NTA: média de 58,6%",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "FEUr > 35%: sugere lesão tubular (necrose tubular aguda)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Ureia U 800, S 120, Cr U 100, S 2,0: FEUr 13,3% (pré-renal)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Reference (Carvounis 2002)",
+                "locale": "en",
+                "template": "documented-authored-eaf16a1f3d28dd065284"
+              },
+              "value": {
+                "text": "prerenal: mean of 25 to 28% · ATN: mean of 58,6%",
+                "locale": "en",
+                "template": "documented-authored-f258592ccb91cb927891"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "FEUrea ≤ 35%: suggests prerenal azotemia",
+            "locale": "en",
+            "template": "documented-authored-e5324c981f3e6ca45cb3"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Ureia U 700, S 100, Cr U 80, S 4,0: FEUr exatamente 35% (limite pré-renal)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Reference (Carvounis 2002)",
+                "locale": "en",
+                "template": "documented-authored-eaf16a1f3d28dd065284"
+              },
+              "value": {
+                "text": "prerenal: mean of 25 to 28% · ATN: mean of 58,6%",
+                "locale": "en",
+                "template": "documented-authored-f258592ccb91cb927891"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "FEUrea ≤ 35%: suggests prerenal azotemia",
+            "locale": "en",
+            "template": "documented-authored-e5324c981f3e6ca45cb3"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Ureia U 500, S 100, Cr U 30, S 3,0: FEUr 50% (NTA)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Reference (Carvounis 2002)",
+                "locale": "en",
+                "template": "documented-authored-eaf16a1f3d28dd065284"
+              },
+              "value": {
+                "text": "prerenal: mean of 25 to 28% · ATN: mean of 58,6%",
+                "locale": "en",
+                "template": "documented-authored-f258592ccb91cb927891"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "FEUr > 35%: suggests tubular injury (acute tubular necrosis)",
+            "locale": "en",
+            "template": "documented-authored-a36a548e36860bbfbeaa"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Ureia U 800, S 120, Cr U 100, S 2,0: FEUr 13,3% (pré-renal)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Referencia (Carvounis 2002)",
+                "locale": "es",
+                "template": "documented-authored-eaf16a1f3d28dd065284"
+              },
+              "value": {
+                "text": "prerrenal: media de 25 a 28% · NTA: media de 58,6%",
+                "locale": "es",
+                "template": "documented-authored-f258592ccb91cb927891"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "FEUr ≤ 35%: sugiere azotemia prerrenal",
+            "locale": "es",
+            "template": "documented-authored-e5324c981f3e6ca45cb3"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Ureia U 700, S 100, Cr U 80, S 4,0: FEUr exatamente 35% (limite pré-renal)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Referencia (Carvounis 2002)",
+                "locale": "es",
+                "template": "documented-authored-eaf16a1f3d28dd065284"
+              },
+              "value": {
+                "text": "prerrenal: media de 25 a 28% · NTA: media de 58,6%",
+                "locale": "es",
+                "template": "documented-authored-f258592ccb91cb927891"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "FEUr ≤ 35%: sugiere azotemia prerrenal",
+            "locale": "es",
+            "template": "documented-authored-e5324c981f3e6ca45cb3"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Ureia U 500, S 100, Cr U 30, S 3,0: FEUr 50% (NTA)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Referencia (Carvounis 2002)",
+                "locale": "es",
+                "template": "documented-authored-eaf16a1f3d28dd065284"
+              },
+              "value": {
+                "text": "prerrenal: media de 25 a 28% · NTA: media de 58,6%",
+                "locale": "es",
+                "template": "documented-authored-f258592ccb91cb927891"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "FEUr > 35%: sugiere lesión tubular (necrosis tubular aguda)",
+            "locale": "es",
+            "template": "documented-authored-a36a548e36860bbfbeaa"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Ureia U 800, S 120, Cr U 100, S 2,0: FEUr 13,3% (pré-renal)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Référence (Carvounis 2002)",
+                "locale": "fr",
+                "template": "documented-authored-eaf16a1f3d28dd065284"
+              },
+              "value": {
+                "text": "prérénal : moyenne de 25 à 28 % · NTA : moyenne de 58,6 %",
+                "locale": "fr",
+                "template": "documented-authored-f258592ccb91cb927891"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "FEUr ≤ 35 % : suggère une azotémie prérénale",
+            "locale": "fr",
+            "template": "documented-authored-e5324c981f3e6ca45cb3"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Ureia U 700, S 100, Cr U 80, S 4,0: FEUr exatamente 35% (limite pré-renal)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Référence (Carvounis 2002)",
+                "locale": "fr",
+                "template": "documented-authored-eaf16a1f3d28dd065284"
+              },
+              "value": {
+                "text": "prérénal : moyenne de 25 à 28 % · NTA : moyenne de 58,6 %",
+                "locale": "fr",
+                "template": "documented-authored-f258592ccb91cb927891"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "FEUr ≤ 35 % : suggère une azotémie prérénale",
+            "locale": "fr",
+            "template": "documented-authored-e5324c981f3e6ca45cb3"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Ureia U 500, S 100, Cr U 30, S 3,0: FEUr 50% (NTA)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Référence (Carvounis 2002)",
+                "locale": "fr",
+                "template": "documented-authored-eaf16a1f3d28dd065284"
+              },
+              "value": {
+                "text": "prérénal : moyenne de 25 à 28 % · NTA : moyenne de 58,6 %",
+                "locale": "fr",
+                "template": "documented-authored-f258592ccb91cb927891"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "FEUr > 35 % : suggère une lésion tubulaire (nécrose tubulaire aiguë)",
+            "locale": "fr",
+            "template": "documented-authored-a36a548e36860bbfbeaa"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Ureia U 800, S 120, Cr U 100, S 2,0: FEUr 13,3% (pré-renal)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Referenz (Carvounis 2002)",
+                "locale": "de",
+                "template": "documented-authored-eaf16a1f3d28dd065284"
+              },
+              "value": {
+                "text": "prärenal: Mittelwert 25 bis 28 % · ATN: Mittelwert 58,6 %",
+                "locale": "de",
+                "template": "documented-authored-f258592ccb91cb927891"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "FEUr ≤ 35 %: spricht für prärenale Azotämie",
+            "locale": "de",
+            "template": "documented-authored-e5324c981f3e6ca45cb3"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Ureia U 700, S 100, Cr U 80, S 4,0: FEUr exatamente 35% (limite pré-renal)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Referenz (Carvounis 2002)",
+                "locale": "de",
+                "template": "documented-authored-eaf16a1f3d28dd065284"
+              },
+              "value": {
+                "text": "prärenal: Mittelwert 25 bis 28 % · ATN: Mittelwert 58,6 %",
+                "locale": "de",
+                "template": "documented-authored-f258592ccb91cb927891"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "FEUr ≤ 35 %: spricht für prärenale Azotämie",
+            "locale": "de",
+            "template": "documented-authored-e5324c981f3e6ca45cb3"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Ureia U 500, S 100, Cr U 30, S 3,0: FEUr 50% (NTA)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Referenz (Carvounis 2002)",
+                "locale": "de",
+                "template": "documented-authored-eaf16a1f3d28dd065284"
+              },
+              "value": {
+                "text": "prärenal: Mittelwert 25 bis 28 % · ATN: Mittelwert 58,6 %",
+                "locale": "de",
+                "template": "documented-authored-f258592ccb91cb927891"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "FEUr > 35 %: spricht für eine tubuläre Schädigung (akute Tubulusnekrose)",
+            "locale": "de",
+            "template": "documented-authored-a36a548e36860bbfbeaa"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Ureia U 800, S 120, Cr U 100, S 2,0: FEUr 13,3% (pré-renal)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Riferimento (Carvounis 2002)",
+                "locale": "it",
+                "template": "documented-authored-eaf16a1f3d28dd065284"
+              },
+              "value": {
+                "text": "prerenale: media di 25 a 28% · NTA: media di 58,6%",
+                "locale": "it",
+                "template": "documented-authored-f258592ccb91cb927891"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "FEUr ≤ 35%: suggerisce azotemia prerenale",
+            "locale": "it",
+            "template": "documented-authored-e5324c981f3e6ca45cb3"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Ureia U 700, S 100, Cr U 80, S 4,0: FEUr exatamente 35% (limite pré-renal)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Riferimento (Carvounis 2002)",
+                "locale": "it",
+                "template": "documented-authored-eaf16a1f3d28dd065284"
+              },
+              "value": {
+                "text": "prerenale: media di 25 a 28% · NTA: media di 58,6%",
+                "locale": "it",
+                "template": "documented-authored-f258592ccb91cb927891"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "FEUr ≤ 35%: suggerisce azotemia prerenale",
+            "locale": "it",
+            "template": "documented-authored-e5324c981f3e6ca45cb3"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Ureia U 500, S 100, Cr U 30, S 3,0: FEUr 50% (NTA)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Riferimento (Carvounis 2002)",
+                "locale": "it",
+                "template": "documented-authored-eaf16a1f3d28dd065284"
+              },
+              "value": {
+                "text": "prerenale: media di 25 a 28% · NTA: media di 58,6%",
+                "locale": "it",
+                "template": "documented-authored-f258592ccb91cb927891"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "FEUr > 35%: suggerisce lesione tubulare (necrosi tubulare acuta)",
+            "locale": "it",
+            "template": "documented-authored-a36a548e36860bbfbeaa"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Ureia U 800, S 120, Cr U 100, S 2,0: FEUr 13,3% (pré-renal)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "المرجع (Carvounis 2002)",
+                "locale": "ar",
+                "template": "documented-authored-eaf16a1f3d28dd065284"
+              },
+              "value": {
+                "text": "قبل كلوي: متوسط 25 إلى 28% · ATN: متوسط 58,6%",
+                "locale": "ar",
+                "template": "documented-authored-f258592ccb91cb927891"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "FEUr ≤ 35%: يوحي بأزوتيميا قبل كلوية",
+            "locale": "ar",
+            "template": "documented-authored-e5324c981f3e6ca45cb3"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Ureia U 700, S 100, Cr U 80, S 4,0: FEUr exatamente 35% (limite pré-renal)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "المرجع (Carvounis 2002)",
+                "locale": "ar",
+                "template": "documented-authored-eaf16a1f3d28dd065284"
+              },
+              "value": {
+                "text": "قبل كلوي: متوسط 25 إلى 28% · ATN: متوسط 58,6%",
+                "locale": "ar",
+                "template": "documented-authored-f258592ccb91cb927891"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "FEUr ≤ 35%: يوحي بأزوتيميا قبل كلوية",
+            "locale": "ar",
+            "template": "documented-authored-e5324c981f3e6ca45cb3"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Ureia U 500, S 100, Cr U 30, S 3,0: FEUr 50% (NTA)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "المرجع (Carvounis 2002)",
+                "locale": "ar",
+                "template": "documented-authored-eaf16a1f3d28dd065284"
+              },
+              "value": {
+                "text": "قبل كلوي: متوسط 25 إلى 28% · ATN: متوسط 58,6%",
+                "locale": "ar",
+                "template": "documented-authored-f258592ccb91cb927891"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "FEUr > 35%: يشير إلى أذية أنبوبية (نخر أنبوبي حاد)",
+            "locale": "ar",
+            "template": "documented-authored-a36a548e36860bbfbeaa"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Ureia U 800, S 120, Cr U 100, S 2,0: FEUr 13,3% (pré-renal)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "参考（Carvounis 2002）",
+                "locale": "zh",
+                "template": "documented-authored-eaf16a1f3d28dd065284"
+              },
+              "value": {
+                "text": "肾前性：平均25至28% · ATN：平均58,6%",
+                "locale": "zh",
+                "template": "documented-authored-f258592ccb91cb927891"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "FEUr ≤ 35%：提示肾前性氮质血症",
+            "locale": "zh",
+            "template": "documented-authored-e5324c981f3e6ca45cb3"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Ureia U 700, S 100, Cr U 80, S 4,0: FEUr exatamente 35% (limite pré-renal)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "参考（Carvounis 2002）",
+                "locale": "zh",
+                "template": "documented-authored-eaf16a1f3d28dd065284"
+              },
+              "value": {
+                "text": "肾前性：平均25至28% · ATN：平均58,6%",
+                "locale": "zh",
+                "template": "documented-authored-f258592ccb91cb927891"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "FEUr ≤ 35%：提示肾前性氮质血症",
+            "locale": "zh",
+            "template": "documented-authored-e5324c981f3e6ca45cb3"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Ureia U 500, S 100, Cr U 30, S 3,0: FEUr 50% (NTA)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "参考（Carvounis 2002）",
+                "locale": "zh",
+                "template": "documented-authored-eaf16a1f3d28dd065284"
+              },
+              "value": {
+                "text": "肾前性：平均25至28% · ATN：平均58,6%",
+                "locale": "zh",
+                "template": "documented-authored-f258592ccb91cb927891"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "FEUr > 35%：提示小管损伤（急性肾小管坏死）",
+            "locale": "zh",
+            "template": "documented-authored-a36a548e36860bbfbeaa"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Ureia U 800, S 120, Cr U 100, S 2,0: FEUr 13,3% (pré-renal)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "参考文献（Carvounis 2002）",
+                "locale": "ja",
+                "template": "documented-authored-eaf16a1f3d28dd065284"
+              },
+              "value": {
+                "text": "腎前性：平均25～28% · ATN：平均58,6%",
+                "locale": "ja",
+                "template": "documented-authored-f258592ccb91cb927891"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "FEUr ≤ 35%: 腎前性アゾテミアを示唆する",
+            "locale": "ja",
+            "template": "documented-authored-e5324c981f3e6ca45cb3"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Ureia U 700, S 100, Cr U 80, S 4,0: FEUr exatamente 35% (limite pré-renal)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "参考文献（Carvounis 2002）",
+                "locale": "ja",
+                "template": "documented-authored-eaf16a1f3d28dd065284"
+              },
+              "value": {
+                "text": "腎前性：平均25～28% · ATN：平均58,6%",
+                "locale": "ja",
+                "template": "documented-authored-f258592ccb91cb927891"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "FEUr ≤ 35%: 腎前性アゾテミアを示唆する",
+            "locale": "ja",
+            "template": "documented-authored-e5324c981f3e6ca45cb3"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Ureia U 500, S 100, Cr U 30, S 3,0: FEUr 50% (NTA)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "参考文献（Carvounis 2002）",
+                "locale": "ja",
+                "template": "documented-authored-eaf16a1f3d28dd065284"
+              },
+              "value": {
+                "text": "腎前性：平均25～28% · ATN：平均58,6%",
+                "locale": "ja",
+                "template": "documented-authored-f258592ccb91cb927891"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "FEUr > 35%: 尿細管障害（急性尿細管壊死）を示唆する",
+            "locale": "ja",
+            "template": "documented-authored-a36a548e36860bbfbeaa"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Ureia U 800, S 120, Cr U 100, S 2,0: FEUr 13,3% (pré-renal)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "संदर्भ (Carvounis 2002)",
+                "locale": "hi",
+                "template": "documented-authored-eaf16a1f3d28dd065284"
+              },
+              "value": {
+                "text": "प्रीरेनल: औसत 25 से 28% · ATN: औसत 58,6%",
+                "locale": "hi",
+                "template": "documented-authored-f258592ccb91cb927891"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "FEUr ≤ 35%: प्रीरेनल एज़ोटेमिया का सुझाव देता है",
+            "locale": "hi",
+            "template": "documented-authored-e5324c981f3e6ca45cb3"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Ureia U 700, S 100, Cr U 80, S 4,0: FEUr exatamente 35% (limite pré-renal)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "संदर्भ (Carvounis 2002)",
+                "locale": "hi",
+                "template": "documented-authored-eaf16a1f3d28dd065284"
+              },
+              "value": {
+                "text": "प्रीरेनल: औसत 25 से 28% · ATN: औसत 58,6%",
+                "locale": "hi",
+                "template": "documented-authored-f258592ccb91cb927891"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "FEUr ≤ 35%: प्रीरेनल एज़ोटेमिया का सुझाव देता है",
+            "locale": "hi",
+            "template": "documented-authored-e5324c981f3e6ca45cb3"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Ureia U 500, S 100, Cr U 30, S 3,0: FEUr 50% (NTA)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "संदर्भ (Carvounis 2002)",
+                "locale": "hi",
+                "template": "documented-authored-eaf16a1f3d28dd065284"
+              },
+              "value": {
+                "text": "प्रीरेनल: औसत 25 से 28% · ATN: औसत 58,6%",
+                "locale": "hi",
+                "template": "documented-authored-f258592ccb91cb927891"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "FEUr > 35%: नलिकीय क्षति (तीव्र ट्यूब्युलर नेक्रोसिस) का सुझाव देता है",
+            "locale": "hi",
+            "template": "documented-authored-a36a548e36860bbfbeaa"
+          },
+          "level": "high"
+        }
+      }
+    ]
+  }
+}

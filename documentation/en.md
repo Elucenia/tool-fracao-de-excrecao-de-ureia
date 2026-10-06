@@ -77,3 +77,34 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+FEUrea ≤ 35%: suggests prerenal azotemia
+
+| Result details | |
+| --- | --- |
+| Reference (Carvounis 2002) | prerenal: mean of 25 to 28% · ATN: mean of 58,6% |
+
+
+### 2
+
+FEUrea ≤ 35%: suggests prerenal azotemia
+
+| Result details | |
+| --- | --- |
+| Reference (Carvounis 2002) | prerenal: mean of 25 to 28% · ATN: mean of 58,6% |
+
+
+### 3
+
+FEUr > 35%: suggests tubular injury (acute tubular necrosis)
+
+| Result details | |
+| --- | --- |
+| Reference (Carvounis 2002) | prerenal: mean of 25 to 28% · ATN: mean of 58,6% |
+

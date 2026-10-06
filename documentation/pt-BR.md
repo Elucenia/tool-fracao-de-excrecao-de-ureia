@@ -77,3 +77,34 @@ Resultado da fórmula ou classificação. Interpretação, conduta e aplicabilid
 Apache-2.0 aplica-se somente ao código da ELUCENIA. Os instrumentos, publicações, traduções e dados mantêm os direitos dos respectivos titulares. Preserve LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+As informações abaixo preservam as saídas do método para exemplos sintéticos. Não constituem validação clínica independente.
+
+### 1
+
+FEUr ≤ 35%: sugere azotemia pré-renal
+
+| Detalhes do resultado | |
+| --- | --- |
+| Referência (Carvounis 2002) | pré-renal: média de 25 a 28% · NTA: média de 58,6% |
+
+
+### 2
+
+FEUr ≤ 35%: sugere azotemia pré-renal
+
+| Detalhes do resultado | |
+| --- | --- |
+| Referência (Carvounis 2002) | pré-renal: média de 25 a 28% · NTA: média de 58,6% |
+
+
+### 3
+
+FEUr > 35%: sugere lesão tubular (necrose tubular aguda)
+
+| Detalhes do resultado | |
+| --- | --- |
+| Referência (Carvounis 2002) | pré-renal: média de 25 a 28% · NTA: média de 58,6% |
+

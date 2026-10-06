@@ -146,7 +146,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "FEUrea/Carvounis 2002:100×Uureia×PCr/(Pureia×UCr); grandezasureia/BUNconsistentes",
-    "implementationVersion": "fracao-de-excrecao-de-ureia@native-2026-10-03+0cdc2ef77d94",
+    "implementationVersion": "fracao-de-excrecao-de-ureia@native-2026-10-05+6c20c85fef5d",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/12427149/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -239,7 +239,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "0cdc2ef77d94c41e9436063b2547c29599fbca524b20f5eb82a74cf87cc06f1b"
+      "implementationHash": "6c20c85fef5dac4b0a57469db8545f3efb50a811a395b6a5cc6014afe8d3cfa5",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "fracao-de-excrecao-de-ureia@native-2026-10-03+0cdc2ef77d94",
+          "previousImplementationHash": "0cdc2ef77d94c41e9436063b2547c29599fbca524b20f5eb82a74cf87cc06f1b",
+          "implementationHash": "6c20c85fef5dac4b0a57469db8545f3efb50a811a395b6a5cc6014afe8d3cfa5",
+          "scientificBodySha256": "f012e6741736a7c106af935b650225221d4de43f5ff00ab603218efe522a830d",
+          "metadataContractHash": "eba6703cd8cb17eb907b2a4412646953006420617cf4165e3f9f6d3cf6682c6f",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "O estudo de 2002 avaliou episódios de insuficiência renal aguda, incluindo causas pré-renais com e sem diuréticos e necrose tubular. A FE de ureia foi menos influenciada pelos diuréticos nessa comparação; isso não a torna independente de todas as interferências nem confirma etiologia pelo corte isolado.",
     "sourceLimitEvidence": {
@@ -258,15 +286,15 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/fracao-de-excrecao-de-ureia/calculator.js",
-    "bytes": 4948,
-    "sha256": "0cdc2ef77d94c41e9436063b2547c29599fbca524b20f5eb82a74cf87cc06f1b"
+    "bytes": 5153,
+    "sha256": "6c20c85fef5dac4b0a57469db8545f3efb50a811a395b6a5cc6014afe8d3cfa5"
   },
-  "sourceToolSha256": "82574c90e66385224893874f1c024dae0305e457a06ae835151d8b30bc0fb1d4",
+  "sourceToolSha256": "de83b929eda251c2a48a2801c22adeff66615049fc768d5e3097991f7eddf926",
   "omittedFullReferenceBanks": [
     {
       "rows": 81,
       "sha256": "15eedadb4173654891045c1bfe1c1451761a18b130a136584ada45774c6d50f0",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",
